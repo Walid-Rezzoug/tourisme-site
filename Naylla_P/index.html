@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mzab Experience - L'âme du désert. Découvrez la culture authentique et le tourisme durable de la vallée du Mzab, Algérie.">
+    <meta name="keywords" content="Vallée du Mzab, Ghardaïa, tourisme, Algérie, culture, voyage durable, désert">
+    <meta name="author" content="Équipe Mzab Experience">
+    <title>Mzab Experience | L'Âme du Désert</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="logo.png" alt="Mzab Experience Logo" style="height: 60px;"></a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#values">Valeurs</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#digital">Digital</a></li>
+                <li><a href="#cta" class="nav-btn">Explorer</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title">Mzab Experience</h1>
+            <p class="hero-tagline">L'âme du désert</p>
+            <a href="#experience" class="cta-button primary">Découvrir l'expérience</a>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- 2. About the Brand -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Qui Sommes-Nous</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content fade-in">
+                <p class="about-text">
+                    "Mzab Experience est une initiative de tourisme culturel visant à promouvoir la vallée du Mzab à
+                    travers des expériences de voyage authentiques, durables et immersives."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Brand Values -->
+    <section class="values section-padding bg-light" id="values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Valeurs</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="values-grid">
+                <div class="value-card fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Authenticité</h3>
+                    <p>Vivez la véritable essence de Ghardaïa, intacte et authentique.</p>
+                </div>
+                <div class="value-card fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Durabilité</h3>
+                    <p>Respecter la nature et préserver l'écosystème délicat de l'oasis.</p>
+                </div>
+                <div class="value-card fade-in-up delay-3">
+                    <div class="icon-box">
+                        <i class="fas fa-users-rays"></i>
+                    </div>
+                    <h3>Immersion Culturelle</h3>
+                    <p>Vivez avec les habitants, apprenez leur artisanat et partagez leurs histoires.</p>
+                </div>
+                <div class="value-card fade-in-up delay-4">
+                    <div class="icon-box">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Engagement Local</h3>
+                    <p>Soutenir directement les artisans et les communautés locales grâce au tourisme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Mzab Experience -->
+    <section class="experience section-padding" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">L'Expérience</h2>
+                <div class="separator"></div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-text fade-in-left">
+                    <h3>Architecture & Histoire</h3>
+                    <p>Flânez dans les ruelles des ksour classés au patrimoine mondial de l'UNESCO. Admirez le génie
+                        architectural ancien conçu pour la vie communautaire et l'adaptation au climat.</p>
+                </div>
+                <div class="exp-image fade-in-right">
+                    <img src="téléchargé.jpg" alt="Architecture de Ghardaia">
+                </div>
+            </div>
+
+            <div class="exp-row reverse">
+                <div class="exp-text fade-in-right">
+                    <h3>Culture & Traditions</h3>
+                    <p>Plongez dans une culture millénaire. Du tissage traditionnel de tapis à la structure sociale
+                        unique des Mozabites, chaque instant est une leçon de patrimoine vivant.</p>
+                </div>
+                <div class="exp-image fade-in-left">
+                    <img src="images (2).jpg" alt="Artisanat Traditionnel">
+                </div>
+            </div>
+
+            <div class="exp-row">
+                <div class="exp-text fade-in-left">
+                    <h3>Nature & Désert</h3>
+                    <p>Trouvez la paix dans les palmeraies luxuriantes contrastant avec le paysage désertique accidenté.
+                        Le silence du Sahara est plus éloquent que les mots.</p>
+                </div>
+                <div class="exp-image fade-in-right">
+                    <img src="images (1).jpg" alt="Paysage Désertique">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4.1. Highlights of Mzab (Points Forts) -->
+    <section class="highlights section-padding bg-light" id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Les Points Forts du Mzab</h2>
+                <div class="separator"></div>
+                <p class="text-center mt-3" style="max-width: 700px; margin: 1rem auto; color: var(--text-light);">
+                    Découvrez ce qui rend la vallée du Mzab unique au monde, une merveille d'ingéniosité humaine et de
+                    beauté naturelle.
+                </p>
+            </div>
+
+            <div class="highlights-grid">
+                <!-- Highlight 1 -->
+                <div class="highlight-item fade-in-up">
+                    <div class="hl-content">
+                        <div class="hl-icon"><i class="fas fa-landmark"></i></div>
+                        <h3>Patrimoine UNESCO</h3>
+                        <p>Classée au patrimoine mondial depuis 1982, la vallée préserve une architecture urbaine
+                            médiévale intacte.</p>
+                    </div>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="highlight-item fade-in-up delay-1">
+                    <div class="hl-content">
+                        <div class="hl-icon"><i class="fas fa-water"></i></div>
+                        <h3>Gestion de l'Eau</h3>
+                        <p>Un système ancestral de partage des eaux de crue, modèle d'ingéniosité et de durabilité
+                            écologique.</p>
+                    </div>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="highlight-item fade-in-up delay-2">
+                    <div class="hl-content">
+                        <div class="hl-icon"><i class="fas fa-city"></i></div>
+                        <h3>Urbanisme Unique</h3>
+                        <p>Les cinq ksour (villes fortifiées) sont des leçons vivantes d'adaptation au climat désertique
+                            rigoureux.</p>
+                    </div>
+                </div>
+
+                <!-- Highlight 4 -->
+                <div class="highlight-item fade-in-up delay-3">
+                    <div class="hl-content">
+                        <div class="hl-icon"><i class="fas fa-tree"></i></div>
+                        <h3>Écosystème Palmeraie</h3>
+                        <p>Une oasis créée par l'homme, véritable refuge de fraîcheur et source de vie agricole au
+                            milieu du désert.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Target Audience & 6. Brand Message -->
+    <section class="audience-message parallax-bg">
+        <div class="overlay-dark"></div>
+        <div class="container content-center text-center fade-in-up">
+            <div class="message-box">
+                <span class="subtitle">Pour les passionnés</span>
+                <h2>Découverte Culturelle • Tourisme Responsable • Authenticité</h2>
+                <div class="divider-white"></div>
+                <h3 class="slogan">"Mzab Experience – L'âme du désert"</h3>
+                <p class="mission-text">Vivez une immersion unique dans une culture millénaire entre désert, traditions
+                    et architecture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Digital Experience (APIs) -->
+    <section class="digital section-padding bg-light" id="digital">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">En Direct</h2>
+                <div class="separator"></div>
+            </div>
+
+            <div class="digital-grid">
+                <!-- Location Map -->
+                <div class="digital-card map-card fade-in-up">
+                    <h3><i class="fas fa-map-marked-alt"></i> Nous Localiser</h3>
+                    <div id="map"></div>
+                    <p class="location-label">Ghardaïa, Algérie</p>
+                </div>
+
+                <!-- Weather Widget -->
+                <div class="digital-card weather-card fade-in-up delay-1">
+                    <h3><i class="fas fa-cloud-sun"></i> Météo Actuelle</h3>
+                    <div class="weather-display" id="weather-widget">
+                        <div class="loader">Chargement météo...</div>
+                    </div>
+                    <p class="weather-note">Planifiez votre voyage en conséquence.</p>
+                </div>
+            </div>
+
+            <!-- Dynamic Gallery -->
+            <div class="gallery-section mt-5">
+                <h3><i class="fas fa-camera-retro"></i> Galerie</h3>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Images injected via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Call to Action -->
+    <section class="cta section-padding text-center" id="cta">
+        <div class="container fade-in-up">
+            <h2>Prêt à vivre l'expérience ?</h2>
+            <p>Les portes de la vallée du Mzab vous sont ouvertes.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="instagram.html" target="_blank" class="cta-button big-btn"
+                    style="background: white; color: #E1306C; border-color: white;"><i class="fab fa-instagram"></i>
+                    Instagram</a>
+                <a href="facebook.html" target="_blank" class="cta-button big-btn"
+                    style="background: white; color: #1877F2; border-color: white;"><i class="fab fa-facebook-f"></i>
+                    Facebook</a>
+                <a href="twitter.html" target="_blank" class="cta-button big-btn"
+                    style="background: white; color: #1DA1F2; border-color: white;"><i class="fab fa-twitter"></i>
+                    Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Mzab Experience</h3>
+                <p>Projet Académique - Marketing Touristique</p>
+            </div>
+            <div class="social-links">
+                <a href="instagram.html" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="facebook.html" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="twitter.html" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mzab Experience. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
